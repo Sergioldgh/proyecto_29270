@@ -290,6 +290,9 @@ footer {
     animation-duration: .8s;
 }
 
+
+/* Animaciones */
+
 @keyframes giraRedes {
     0% {
         transform: rotate(72deg);
