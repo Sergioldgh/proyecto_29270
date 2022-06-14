@@ -331,6 +331,7 @@ footer {
 
 @media screen and (max-width:1023px) {
     .container {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
     }
@@ -370,6 +371,7 @@ footer {
 
 @media screen and (max-width:768px) {
     .container {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
     }
@@ -410,7 +412,8 @@ footer {
 /*  Mis Datos   */
 
 @media screen and (max-width:768px) {
-    .containermdatos {
+    .containerMdatos {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -427,7 +430,8 @@ footer {
 }
 
 @media screen and (max-width:1023px) {
-    .containermdatos {
+    .containerMdatos {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -447,7 +451,8 @@ footer {
 /*  Eventos   */
 
 @media screen and (max-width:768px) {
-    .containereventos {
+    .containerEventos {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -467,7 +472,8 @@ footer {
 }
 
 @media screen and (max-width:1023px) {
-    .containereventos {
+    .containerEventos {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -490,7 +496,8 @@ footer {
 /*  Noticias   */
 
 @media screen and (max-width:768px) {
-    .containernoticias {
+    .containerNoticias {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -507,7 +514,8 @@ footer {
 }
 
 @media screen and (max-width:1023px) {
-    .containernoticias {
+    .containerNoticias {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -527,7 +535,8 @@ footer {
 /*  Contacto   */
 
 @media screen and (max-width:768px) {
-    .containercontacto {
+    .containerContacto {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -544,7 +553,8 @@ footer {
 }
 
 @media screen and (max-width:1023px) {
-    .containercontacto {
+    .containerContacto {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
