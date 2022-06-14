@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
     <title>Educación Avazada|López Díaz</title>
 </head>
 
 <body>
-    <div class="containerMdatos">
+    <div class="container">
         <header class="header">
             <nav class="header__nav">
                 <a class="header__img" href="./index.html">
@@ -38,32 +39,40 @@
                 </ul>
             </nav>
         </header>
-        <main class="tabladatos">
-            <div class="tabladatos__informacion">
-                <h1>Datos Personales</h1>
-                <table border="1px solid black" cellspacing="1px">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Dirección</th>
-                            <th>C.P.</th>
-                            <th>Teléfono</th>
-                            <th>Edad</th>
-                            <th>Estudios</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr align="center">
-                            <td>Sergio López Díaz</td>
-                            <td>Dirección Conocida</td>
-                            <td>10000</td>
-                            <td>5082526352</td>
-                            <td>43</td>
-                            <td>Universidad</td>
-                        </tr>
-                    </tbody>
-                    <tfoot></tfoot>
-                </table>
+        <main class="tablaDatos">
+            <div class="container container__tabladatos">
+                <div class="table-responsive">
+                    <h1>Datos Personales</h1>
+                    <table class="table table-bordered table-hover" border="1px solid black" cellspacing="1px">
+                        <thead class="tabladatos__encabezados">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>C.P.</th>
+                                <th>Teléfono</th>
+                                <th>Edad</th>
+                                <th>Estudios</th>
+                                <th>Cursos</th>
+                                <th>Diplomados</th>
+                                <th>Maestrias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr align="center">
+                                <td>Sergio López Díaz</td>
+                                <td>Dirección Conocida</td>
+                                <td>10000</td>
+                                <td>5082526352</td>
+                                <td>43</td>
+                                <td>Universidad</td>
+                                <td>Si</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
             </div>
             <div class="tabladatos__informacionadicional">
                 <h2>Datos Adicionales</h2>
@@ -92,6 +101,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
