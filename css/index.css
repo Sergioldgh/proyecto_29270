@@ -35,6 +35,8 @@ h4,
 h5,
 h6 {
     font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit
 }
 
 dl,
@@ -166,8 +168,11 @@ main {
     height: 250px;
 }
 
-.tabladatos__informacion h1 {
+.table-responsive h1 {
+    padding: 0.5em;
     text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 tbody {
@@ -181,6 +186,8 @@ tbody {
 .tabladatos__informacionadicional h2 {
     text-align: center;
     padding-top: 2em;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 
@@ -189,29 +196,31 @@ tbody {
 .listadoEventos {
     grid-column: 1/-1;
     grid-row: 2/3;
-    height: 350px
+    height: 350px;
+}
+
+.row {
+    justify-content: center;
 }
 
 .listadoEventos h1 {
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.list-group {
+    width: auto;
+    margin: auto;
+}
+
+.list-group-item {
+    transition: font 0.8s;
     text-align: center;
 }
 
-.listadoEventos ol {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-height: 100%;
-}
-
-.listadoEventos li {
-    padding: 0.25em;
-}
-
-.listadoEventos a {
-    transition: font 0.8s;
-}
-
-.listadoEventos a:hover {
+.list-group-item:hover {
     text-transform: uppercase;
     color: black;
     font-weight: bold;
@@ -265,6 +274,18 @@ tbody {
 
 /*  Contacto   */
 
+.containerContacto h1 {
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    justify-items: center;
+}
+
+.form-group {
+    justify-content: center;
+}
+
 .botones {
     display: flex;
     justify-content: space-evenly;
@@ -290,12 +311,12 @@ footer {
 
 .contenido__titulo {
     font-weight: bold;
-    font-size: 1em;
+    /* font-size: 1em; */
 }
 
 .contenido__titulo2 {
     font-weight: bold;
-    font-size: 1em;
+    /* font-size: 1em; */
     animation-name: giraNombre;
     animation-duration: .8s;
 }

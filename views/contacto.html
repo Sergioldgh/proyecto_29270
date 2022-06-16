@@ -40,32 +40,37 @@
             </nav>
         </header>
         <main class="containerContacto">
-            <form action="" method="get">
-                <div class="form-group">
-                    <label for="Nombre">Nombre:</label>
-                    <input class="form-control" type="text" name="Nombre">
+            <h1>
+                Póngase en contacto con nosotros
+            </h1>
+            <div class="containerContacto__form">
+                <form action="" method="get">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre:</label>
+                        <input class="form-control" type="text" name="Nombre">
+                        <br>
+                        <label for="correo">eMail:</label>
+                        <input class="form-control" type="email" name="correo">
+                        <br>
+                        <label for="telefono">Teléfono:</label>
+                        <input class="form-control" type="tel" name="telefono">
+                        <br>
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea class="form-control" name="comentarios" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        <label for="TipoUsuario">Tipo Usuario:</label>
+                        <select class="form-control" name="TipoUsuario" id="">
+                            <option value="CM">Con Membrecia</option> 
+                            <option value="SM">Sin Membrecia</option>
+                        </select>
+                    </div>
                     <br>
-                    <label for="correo">eMail:</label>
-                    <input class="form-control" type="email" name="correo">
-                    <br>
-                    <label for="telefono">Teléfono:</label>
-                    <input class="form-control" type="tel" name="telefono">
-                    <br>
-                    <label for="comentarios">Comentarios:</label>
-                    <textarea class="form-control" name="comentarios" id="" cols="30" rows="10"></textarea>
-                    <br>
-                    <label for="TipoUsuario">Tipo Usuario:</label>
-                    <select class="form-control" name="TipoUsuario" id="">
-                    <option value="CM">Con Membrecia</option> 
-                    <option value="SM">Sin Membrecia</option>
-                </select>
-                </div>
-                <br>
-                <div class="botones">
-                    <input class="btn btn-secondary" type="submit" value="Enviar">
-                    <input class="btn btn-secondary" type="reset" value="Borrar Formulario">
-                </div>
-            </form>
+                    <div class="botones">
+                        <input class="btn btn-secondary" type="submit" value="Enviar">
+                        <input class="btn btn-secondary" type="reset" value="Borrar Formulario">
+                    </div>
+                </form>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__contenido">
