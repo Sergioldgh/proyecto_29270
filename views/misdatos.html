@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="containerPrincipal">
         <header class="header">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
@@ -24,10 +24,10 @@
                     <div id="menunavegacion" class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-3">
                             <li class="nav-item">
-                                <a class="nav-link nav-link--actual" href="../index.html">Inicio</a>
+                                <a class="nav-link " href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./misdatos.html">Mis Datos</a>
+                                <a class="nav-link nav-link--actual" href="./misdatos.html">Mis Datos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./eventos.html">Eventos</a>
@@ -45,12 +45,12 @@
                 </div>
             </nav>
         </header>
-        <main class="tablaDatos">
-            <div class="container container__tabladatos">
+        <main class="container__tabla">
+            <div class="container">
+                <h1>Datos Personales</h1>
                 <div class="table-responsive">
-                    <h1>Datos Personales</h1>
                     <table class="table table-bordered table-hover" border="1px solid black" cellspacing="1px">
-                        <thead class="tabladatos__encabezados">
+                        <thead>
                             <tr>
                                 <th>Nombre</th>
                                 <th>Dirección</th>
@@ -80,7 +80,8 @@
                     </table>
                 </div>
             </div>
-            <div class="tabladatos__informacionadicional">
+
+            <div class="container-secundario">
                 <h2>Datos Adicionales</h2>
                 <article>
                     <p>
@@ -91,15 +92,15 @@
                 </article>
             </div>
         </main>
-        <footer class="footer">
-            <div class="footer__contenido">
-                <div class="contenido__titulo">
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5">
                     <h4>Derechos reservados por Educación Evanzada &copy; </h4>
                 </div>
-                <div class="contenido__titulo2">
+                <div class="col-sm-4">
                     <h4>Sergio López</h4>
                 </div>
-                <div class="contenido__redes">
+                <div class="col-sm-3">
                     <a class="logosredes__twitter" href="http://twitter.com" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
                     <a class="logosredes__face" href="http://www.facebook.com" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32 /></a>
                     <a class="logosredes__linkedin" href="http://www.linkedin.com" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32 /></a>
