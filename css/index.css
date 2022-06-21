@@ -570,6 +570,7 @@ tbody {
     .video {
         grid-column: 1/-1;
         grid-row: 3/4;
+        transform: skewX(7deg);
     }
     .texto2 {
         grid-column: 1/-1;
