@@ -1,0 +1,18 @@
+/*  MISC    */
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+
+/*  PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/*  VIEWS   */
+
+@import './views/home';
+@import './views/misdatos';
+@import './views/eventos';
+@import './views/noticias';
+@import './views/contacto';
