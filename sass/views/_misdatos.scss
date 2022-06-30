@@ -1,0 +1,48 @@
+.containerPrincipal {
+    width: 80%;
+    max-width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    padding: 0.2em auto;
+    .container__tabla {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        .container h1 {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1em;
+            font-weight: bold;
+            font-size: 2em;
+            .table-responsive {
+                overflow-x: clip;
+                text-align: center;
+                justify-content: center;
+                .table-responsive h1 {
+                    padding: 0.5em;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: xx-large;
+                }
+            }
+        }
+    }
+}
+
+.container-secundario {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1em;
+        font-weight: bold;
+        font-size: 2em;
+    }
+}
