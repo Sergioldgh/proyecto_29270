@@ -1,0 +1,27 @@
+.listadoEventos {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    height: 350px;
+    &__title {
+        padding: 0.5em;
+        text-align: center;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    .row {
+        justify-content: center;
+        .list-group {
+            width: auto;
+            margin: auto;
+        }
+        .list-group-item {
+            transition: font 0.8s;
+            text-align: center;
+        }
+        .list-group-item:hover {
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+        }
+    }
+}

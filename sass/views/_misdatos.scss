@@ -8,8 +8,7 @@
     grid-template-rows: repeat(6, auto);
     padding: 0.2em auto;
     .container__tabla {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        @include paddings(0.5em, 0.5em);
         grid-column: 1/-1;
         grid-row: 2/3;
         .container h1 {
@@ -23,10 +22,10 @@
                 text-align: center;
                 justify-content: center;
                 .table-responsive h1 {
-                    padding: 0.5em;
-                    text-align: center;
-                    font-weight: bold;
-                    font-size: xx-large;
+                    padding: map-get($estilos, padd);
+                    text-align: map-get($estilos, talign);
+                    font-weight: map-get($estilos, fweight);
+                    font-size: map-get($estilos, fsize);
                 }
             }
         }
@@ -34,8 +33,7 @@
 }
 
 .container-secundario {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    @include paddings(0.5em, 0.5em);
     grid-column: 1/-1;
     grid-row: 3/4;
     h2 {

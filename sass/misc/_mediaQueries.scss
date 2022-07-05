@@ -1,0 +1,174 @@
+@media screen and (max-width:1023px) {
+    .containerPrincipal {
+        width: 100%;
+        max-width: 100%;
+        margin: 0.5em auto;
+        grid-template-rows: repeat(5, auto)
+    }
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 2em;
+        font-size: small;
+    }
+    .video {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+    .texto2 {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .texto3 {
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .container-fluid {
+        text-align-last: center;
+    }
+    .col-sm-5 {
+        font-size: smaller;
+        font-weight: bold;
+    }
+    .table-responsive {
+        overflow-x: auto;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .containerPrincipal {
+        width: 100%;
+        margin: 0 auto;
+        grid-template-rows: repeat(5, auto)
+    }
+    .video {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+    .texto2 {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .texto3 {
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .table-responsive {
+        overflow-x: auto;
+        text-align: center;
+    }
+    .videosNoticias {
+        flex-direction: column;
+        align-items: center;
+    }
+    .videosNoticias__uno {
+        transform: none;
+        width: 90%;
+        animation-name: none;
+    }
+    .videosNoticias__dos {
+        transform: none;
+        width: 90%;
+        animation-name: none;
+    }
+    .videosNoticias2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .videosNoticias2__uno {
+        width: 90%;
+        animation-name: none;
+    }
+    .videosNoticias2__dos {
+        width: 90%;
+        animation-name: none;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .containerPrincipal {
+        width: 100%;
+        margin: 0 auto;
+        grid-template-rows: repeat(5, auto)
+    }
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        justify-content: flex-start;
+    }
+    .video {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        transform: skewX(0deg);
+    }
+    .texto2 {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .texto3 {
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .table-responsive {
+        overflow-x: auto;
+        text-align: center;
+    }
+    .videosNoticias {
+        flex-direction: column;
+        align-items: center;
+    }
+    .videosNoticias__uno {
+        transform: none;
+        width: 90%;
+        animation-name: muevenoticiascrece;
+        animation-duration: 5.5s;
+    }
+    .videosNoticias__dos {
+        transform: none;
+        width: 90%;
+        animation-name: muevenoticiascrece;
+        animation-duration: 5s;
+    }
+    .videosNoticias2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .videosNoticias2__uno {
+        transform: none;
+        width: 90%;
+        animation-name: muevenoticiascrece;
+        animation-duration: 4.5s;
+    }
+    .videosNoticias2__dos {
+        transform: none;
+        width: 90%;
+        animation-name: muevenoticiascrece;
+        animation-duration: 4s;
+    }
+}

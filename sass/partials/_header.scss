@@ -2,52 +2,49 @@ header {
     grid-column: 1/-1;
     grid-row: 1/2;
     background: rgb(192, 192, 192);
-    background: linear-gradient(180deg, silver, rgb(223, 220, 220), rgb(245, 243, 243));
+    background: linear-gradient(180deg, $principal, rgb(223, 220, 220), rgb(245, 243, 243));
     justify-items: center;
     padding: 0;
     .container-fluid {
         grid-column: 1/3;
         grid-row: 6/7;
         background: rgb(192, 192, 192);
-        background: linear-gradient(0deg, silver, rgb(223, 220, 220), rgb(245, 243, 243));
+        background: linear-gradient(0deg, $principal, rgb(223, 220, 220), rgb(245, 243, 243));
         text-align-last: center;
         justify-content: end;
-        .navbar-brand {
-            margin-right: inherit;
-            .navbar-collapse {
-                justify-content: flex-end;
-                .navbar-nav {
-                    padding: inherit;
+        .navbar-collapse {
+            justify-content: flex-end;
+            .navbar-nav {
+                padding: inherit;
+                padding-right: inherit;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                .nav-item {
                     padding-right: inherit;
-                    list-style: none;
-                    display: flex;
-                    align-items: center;
-                    .nav-item {
-                        padding-right: inherit;
-                        padding-left: inherit;
-                        padding-right: 0.5rem;
-                        padding-left: 0.5rem;
-                        .nav-link {
-                            display: block;
-                            color: rgb(142, 142, 142);
-                            text-decoration: none;
-                            font-weight: bold;
-                            text-align: center;
-                            .nav-link__actual {
-                                background-color: crimson;
-                                padding: 0.5em;
-                                color: white;
-                                text-transform: uppercase;
-                                .nav-link__separado {
-                                    color: crimson;
-                                    &:hover {
-                                        color: white;
-                                        transition: 2s;
-                                        background-color: crimson;
-                                    }
-                                }
-                            }
-                        }
+                    padding-left: inherit;
+                    padding-right: 0.5rem;
+                    padding-left: 0.5rem;
+                    .nav-link {
+                        display: block;
+                        color: rgb(142, 142, 142);
+                        text-decoration: none;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    &:hover {
+                        color: white;
+                        transition: 2s;
+                        background-color: $links;
+                    }
+                    .nav-link__actual {
+                        background-color: $links;
+                        padding: 0.5em;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                    .nav-link__separado {
+                        color: $links;
                     }
                 }
             }
