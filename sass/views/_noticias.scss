@@ -1,40 +1,43 @@
 .containerNoticias {
     grid-column: 1/-1;
     grid-row: 2/5;
-}
-
-.videosNoticias {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-    flex-grow: 1em;
-    justify-content: space-evenly;
-    align-content: center;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    $videos: (uno: 'uno', dos: 'dos');
-    @each $key,
-    $val in $videos {
-        &__#{$key} {
-            position: relative;
+    .videosNoticias {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-grow: 1em;
+        justify-content: space-evenly;
+        align-content: center;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        $videos: (uno: 'uno', dos: 'dos');
+        @each $key,
+        $val in $videos {
+            &__#{$key} {
+                position: relative;
+            }
         }
     }
-}
-
-.videosNoticias2 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    display: flex;
-    flex-grow: 1em;
-    justify-content: space-evenly;
-    align-content: center;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    $videos: (uno: 'uno', dos: 'dos');
-    @each $key,
-    $val in $videos {
-        &__#{$key} {
-            position: relative;
+    .videosNoticias2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: flex;
+        flex-grow: 1em;
+        justify-content: space-evenly;
+        align-content: center;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        $videos: (uno: 'uno', dos: 'dos');
+        @each $key,
+        $val in $videos {
+            &__#{$key} {
+                position: relative;
+            }
         }
+    }
+    .textoNoticias {
+        font-size: 1em;
+        text-align: center;
+        font-weight: 530;
     }
 }

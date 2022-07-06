@@ -1,46 +1,54 @@
-.containerPrincipal {
-    width: 80%;
-    max-width: 100%;
-    margin: 10px auto;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-    padding: 0.2em auto;
-    .container__tabla {
-        @include paddings(0.5em, 0.5em);
-        grid-column: 1/-1;
-        grid-row: 2/3;
-        .container h1 {
-            text-align: center;
-            text-transform: uppercase;
-            padding: 1em;
-            font-weight: bold;
-            font-size: 2em;
-            .table-responsive {
-                overflow-x: clip;
+    .containerPrincipal {
+        width: 80%;
+        max-width: 100%;
+        margin: 10px auto;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        padding: 0.2em auto;
+        .container__tabla {
+            @include paddings(0.5em, 0.5em);
+            grid-column: 1/-1;
+            grid-row: 2/3;
+            .container h1 {
                 text-align: center;
-                justify-content: center;
-                .table-responsive h1 {
-                    padding: map-get($estilos, padd);
-                    text-align: map-get($estilos, talign);
-                    font-weight: map-get($estilos, fweight);
-                    font-size: map-get($estilos, fsize);
+                text-transform: uppercase;
+                padding: 1em;
+                font-weight: bold;
+                font-size: 2em;
+                .table-responsive {
+                    overflow-x: clip;
+                    text-align: center;
+                    justify-content: center;
+                    .table-responsive h1 {
+                        padding: map-get($estilos, padd);
+                        text-align: map-get($estilos, talign);
+                        font-weight: map-get($estilos, fweight);
+                        font-size: map-get($estilos, fsize);
+                    }
                 }
             }
         }
     }
-}
-
-.container-secundario {
-    @include paddings(0.5em, 0.5em);
-    grid-column: 1/-1;
-    grid-row: 3/4;
-    h2 {
-        text-align: center;
-        text-transform: uppercase;
-        padding: 1em;
-        font-weight: bold;
-        font-size: 2em;
+    
+    .container-secundario {
+        @include paddings(0.5em, 0.5em);
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 1em;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 0.25em;
+            padding-bottom: 1em;
+            font-weight: bold;
+            font-size: 1em;
+        }
     }
-}
